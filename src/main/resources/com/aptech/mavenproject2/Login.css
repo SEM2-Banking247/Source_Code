@@ -1,0 +1,20 @@
+.button1:hover {
+    -fx-background-color: blue;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+}
+
+.button1 {
+    -fx-background-color: white;
+    -fx-border-color: blue;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+
+.forgot:hover {
+    -fx-text-fill: blue;
+}

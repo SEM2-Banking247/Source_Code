@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="698.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Transaction_TransferBillController">
+   <center>
+      <ScrollPane prefHeight="654.0" prefWidth="780.0" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane prefHeight="712.0" prefWidth="1033.0">
+               <children>
+                  <Label layoutX="282.0" layoutY="90.0" text="TRANSACTION BILL">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="672.0" layoutY="88.0" mnemonicParsing="false" onAction="#cancel" style="-fx-background-color: red; -fx-background-radius: 15;" text="Back" textFill="#fffefe">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="581.0" layoutY="87.0" mnemonicParsing="false" onAction="#printBill" style="-fx-background-color: orange; -fx-background-radius: 15;" text="Print Bill" textFill="#fffafa">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ImageView fitHeight="76.0" fitWidth="108.0" layoutX="194.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../IMG/Logo.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="293.0" layoutY="29.0" prefHeight="47.0" prefWidth="170.0" text="ECOMBANK">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color opacity="0.4236641228199005" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9078947305679321" green="0.1975511759519577" blue="0.1975511759519577" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+                  <Label layoutX="214.0" layoutY="644.0" prefHeight="32.0" prefWidth="328.0" text="THANK YOU FOR USING THE SERVICE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color opacity="0.4236641228199005" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9078947305679321" green="0.1975511759519577" blue="0.1975511759519577" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="txtCurrency" layoutX="128.0" layoutY="118.0" prefHeight="26.0" prefWidth="57.0" text="VND" />
+                  <Label fx:id="txtAmount" layoutX="204.0" layoutY="117.0" prefHeight="29.0" prefWidth="178.0" text="Amount" textFill="#f20808">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="126.0" layoutY="193.0" text="From">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtFullnameRequest" layoutX="126.0" layoutY="214.0" prefHeight="39.0" prefWidth="381.0" text="Request Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="txtCardNumberRequest" layoutX="126.0" layoutY="258.0" prefHeight="21.0" prefWidth="348.0" text="Request Card Number">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="txtBankRequest" layoutX="126.0" layoutY="289.0" text="Request Bank">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label layoutX="126.0" layoutY="462.0" text="Description:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtDescription" layoutX="126.0" layoutY="481.0" prefHeight="39.0" prefWidth="276.0" text="Description">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label layoutX="126.0" layoutY="601.0" prefHeight="39.0" prefWidth="87.0" text="Transaction Code:">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtTransactionId" layoutX="221.0" layoutY="600.0" prefHeight="42.0" prefWidth="192.0" />
+                  <Label fx:id="txtTransactionDate" layoutX="128.0" layoutY="145.0" prefHeight="33.0" prefWidth="121.0" text="transaction date">
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+                  <Label layoutX="128.0" layoutY="328.0" text="To">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtFullnameReceiver" layoutX="128.0" layoutY="356.0" text="Receiver Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtCardNumberReceiver" layoutX="128.0" layoutY="384.0" text="Receiver Card Number">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtBankReceiver" layoutX="128.0" layoutY="412.0" text="Receiver Bank">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="128.0" layoutY="545.0" text="Note:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtNote" layoutX="126.0" layoutY="564.0" prefHeight="29.0" prefWidth="448.0" text="transaction notice">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

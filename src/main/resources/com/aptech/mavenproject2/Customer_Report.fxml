@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="800.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Customer_ReportController">
+   <bottom>
+      <AnchorPane prefHeight="76.0" prefWidth="1029.0" style="-fx-background-color: #deed87;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView disable="true" fitHeight="50.0" fitWidth="65.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../IMG/Logo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="937.0" layoutY="39.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
+               <font>
+                  <Font name="Arial Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="23.0" prefHeight="35.0" prefWidth="148.0" text="ECOMBANK">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color opacity="0.4236641228199005" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9078947305679321" green="0.1975511759519577" blue="0.1975511759519577" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="937.0" layoutY="10.0" prefHeight="28.0" prefWidth="170.0" text="54 - Le Thanh Nghi Str" textFill="#f80000">
+               <font>
+                  <Font name="Arial Bold Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="72.0" prefWidth="1012.0" style="-fx-background-color: #deed87;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="27.0" layoutY="13.0" prefHeight="47.0" prefWidth="240.0" text="ECOMBANK">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color opacity="0.4236641228199005" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9078947305679321" green="0.1975511759519577" blue="0.1975511759519577" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Button layoutX="1018.0" layoutY="21.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="#eeeaea">
+               <font>
+                  <Font size="15.0" />
+               </font>
+<!--               <graphic>
+                  <Icon content="LAUNCH" />
+               </graphic>-->
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" layoutX="612.0" layoutY="21.0" prefHeight="31.0" prefWidth="358.0" textFill="#ee1313">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="970.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../IMG/icon_user.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="593.0" prefWidth="189.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="15.0" layoutY="200.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="52.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="WITHDRAW" textFill="WHITE">
+<!--               <graphic>
+                  <Icon content="ASSIGNMENT_IND" />
+               </graphic>-->
+            </Button>
+            <Button layoutX="15.0" layoutY="283.0" mnemonicParsing="false" onAction="#transfer" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSFER" textFill="#f5f5f5">
+<!--               <graphic>
+                  <Icon content="ASSIGNMENT_IND" />
+               </graphic>-->
+            </Button>
+            <Button layoutX="15.0" layoutY="118.0" mnemonicParsing="false" onAction="#showInfor" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="INFORMATION" textFill="#f8f5f5">
+<!--               <graphic>
+                  <Icon content="ACCOUNT_BALANCE" />
+               </graphic>-->
+            </Button>
+            <Button layoutX="15.0" layoutY="364.0" mnemonicParsing="false" onAction="#report" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="REPORT" textFill="WHITE">
+<!--               <graphic>
+                  <Icon content="ATTACH_MONEY" />
+               </graphic>-->
+            </Button>
+            <Button layoutX="15.0" layoutY="440.0" mnemonicParsing="false" onAction="#showHistory" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSACTIONS" textFill="WHITE" />
+            <Button layoutX="15.0" layoutY="514.0" mnemonicParsing="false" onAction="#showBranches" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="BRANCHES" textFill="WHITE" />
+            <Button layoutX="15.0" layoutY="40.0" mnemonicParsing="false" onAction="#home" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME PAGE" textFill="#f8f5f5" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow level="0.24">
+               <input>
+                  <Bloom>
+                     <input>
+                        <InnerShadow>
+                           <input>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow height="1.0" radius="0.0" width="0.0" />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </input>
+                        </InnerShadow>
+                     </input>
+                  </Bloom>
+               </input>
+            </Glow>
+         </effect>
+      </AnchorPane>
+   </left>
+   <right>
+      <VBox accessibleRole="TABLE_VIEW" nodeOrientation="LEFT_TO_RIGHT" prefHeight="599.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../IMG/login-banner.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../IMG/Img_right1.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../IMG/img_right2.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../IMG/img_right3.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane prefHeight="635.0" prefWidth="783.0">
+               <children>
+                  <Label layoutX="22.0" layoutY="25.0" prefHeight="27.0" prefWidth="455.0" text="REPORT TEMPLATE FOR BANKING" textAlignment="CENTER">
+                     <font>
+                        <Font name=".VnArial Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="88.0" layoutY="103.0" prefHeight="21.0" prefWidth="102.0" text="User Name:">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="166.0" prefHeight="21.0" prefWidth="135.0" text="Type of Feedback:">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="88.0" layoutY="225.0" prefHeight="21.0" prefWidth="102.0" text="Title">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="283.0" prefHeight="21.0" prefWidth="131.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="84.0" layoutY="311.0" prefHeight="21.0" prefWidth="140.0" text="Feedback/Enquiry:">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="250.0" layoutY="508.0" mnemonicParsing="false" onAction="#sendReport" prefHeight="30.0" prefWidth="86.0" style="-fx-background-color: blue; -fx-background-radius: 15;" text="Send" textFill="#f5f3f3">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <TextField fx:id="txtTitle" layoutX="219.0" layoutY="223.0" prefHeight="26.0" prefWidth="370.0" promptText="required" />
+                  <TextArea fx:id="txtContent" layoutX="216.0" layoutY="311.0" prefHeight="141.0" prefWidth="374.0" promptText="required" />
+                  <Label fx:id="txtFullname" layoutX="221.0" layoutY="102.0" prefHeight="24.0" prefWidth="246.0" text="User Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtNotification" alignment="CENTER" layoutX="147.0" layoutY="498.0" prefHeight="25.0" prefWidth="380.0" textFill="#12e11c">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="353.0" layoutY="507.0" mnemonicParsing="false" onAction="#home" prefHeight="32.0" prefWidth="63.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="Home" textFill="#f8f6f6" />
+                  <ChoiceBox fx:id="reportTypesChoiceBox" layoutX="219.0" layoutY="164.0" prefHeight="27.0" prefWidth="231.0" />
+                  <Label fx:id="ValidateTitle" layoutX="217.0" layoutY="259.0" prefHeight="27.0" prefWidth="374.0" textFill="RED" />
+                  <Label fx:id="ValidateContent" layoutX="213.0" layoutY="461.0" prefHeight="27.0" prefWidth="383.0" textFill="RED" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
