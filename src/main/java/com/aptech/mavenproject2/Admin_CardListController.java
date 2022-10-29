@@ -342,7 +342,7 @@ public class Admin_CardListController implements Initializable {
         }
     }
     
-     @FXML
+    @FXML
     public void salaryManager() throws IOException{
         App.setRoot("Admin_Salary");
     }

@@ -15,10 +15,6 @@ public class App extends Application {
 
     private static Scene scene;
 
-    static void setRoot(String customer_Home, int i, int i0) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("Login"));

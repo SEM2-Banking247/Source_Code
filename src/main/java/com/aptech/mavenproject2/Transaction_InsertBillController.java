@@ -284,7 +284,7 @@ public class Transaction_InsertBillController implements Initializable{
             }  
             
             //path where the PDF file will be store
-            pdfdoc.save("/Users/Admin/Documents/NetBeansProjects/banking247/WithdrawBill_id"+custom_Transaction.getTransaction_id()+".pdf");
+            pdfdoc.save("/Users/tuan/NetBeansProjects/banking247/InsertBill_id"+custom_Transaction.getTransaction_id()+".pdf");
             
             //close file
             pdfdoc.close();

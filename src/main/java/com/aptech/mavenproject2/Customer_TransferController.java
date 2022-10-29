@@ -19,12 +19,16 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.util.Duration;
 
 /**
  *
@@ -81,6 +85,17 @@ public class Customer_TransferController implements Initializable{
         }
         cards.forEach(card -> cardNumberChoiceBox.getItems().add(card.getCard_number()));
         txtFullname_header.setText("Hi, "+user.getFull_name());
+        
+        //get user card's balance every 1s
+        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(1000), e -> {
+            try {
+                getAmount();
+            } catch (SQLException ex) {
+                Logger.getLogger(Customer_WithdrawController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }));
+        timeline.setCycleCount(Animation.INDEFINITE);
+        timeline.playFromStart();
     }    
     
     @FXML
@@ -121,6 +136,14 @@ public class Customer_TransferController implements Initializable{
             return 0;
         }
         return 1;
+    }
+    
+    @FXML 
+    private void getAmount() throws SQLException{
+        //get data
+        String card_number = cardNumberChoiceBox.getValue();
+        Card card_request = cardEntity.selectCardByCardNumber(card_number);
+        txtBalance.setText(String.format("%.0f",card_request.getCard_balance()));
     }
     
     @FXML 

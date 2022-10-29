@@ -287,9 +287,8 @@ public class Customer_EditInforController implements Initializable{
         App.setRoot("Customer_Withdraw");
     }
     
-     @FXML
+    @FXML
     public void home() throws IOException{
         App.setRoot("Customer_Home");
     }
-    
 }

@@ -69,5 +69,4 @@ public class Customer_HomeController implements Initializable{
     public void home() throws IOException{
         App.setRoot("Customer_Home");
     }
-    
 }

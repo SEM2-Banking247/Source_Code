@@ -103,11 +103,15 @@ public class Customer_HistoryController implements Initializable{
                 Custom_Transaction custom_transaction = new Custom_Transaction();
                 
                 custom_transaction.setTransaction_id(transaction.getTransaction_id());
-                if (transaction.getCard_id_request()== card.getCard_infor_id() || transaction.getCard_id_receiver() == transaction.getCard_id_request()) {
+                //if its a withdraw transaction
+//                transaction.getCard_id_request()== card.getCard_infor_id() || transaction.getCard_id_receiver() == transaction.getCard_id_request()
+                if (transaction.getTransaction_type_id() == 1) {
                     custom_transaction.setTransaction_amount(String.format("-"+"%.0f",transaction.getTransaction_amount()));
                     custom_transaction.setNew_balance(String.format("%.0f",transaction.getNew_balance_request()));
                 }
-                if (transaction.getCard_id_receiver() == card.getCard_infor_id() && transaction.getCard_id_receiver() != transaction.getCard_id_request()) {
+                //if its an insert money or transfer transaction
+//                transaction.getCard_id_receiver() == card.getCard_infor_id() && transaction.getCard_id_receiver() != transaction.getCard_id_request()
+                else{
                     custom_transaction.setTransaction_amount(String.format("+"+"%.0f",transaction.getTransaction_amount()));
                     custom_transaction.setNew_balance(String.format("%.0f",transaction.getNew_balance_receiver()));
                 }

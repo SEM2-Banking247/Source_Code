@@ -95,7 +95,10 @@ public class Employee_InforController implements Initializable{
         App.setRoot("Login");
     }
     
-    
+    @FXML
+    public void home() throws IOException{
+        App.setRoot("Employee_Home");
+    }
     
     @FXML 
     private int showSalary() throws SQLException{
@@ -115,7 +118,7 @@ public class Employee_InforController implements Initializable{
         
         if (user.getPassword().equals(password)) {
             Salary salary = salaryEntity.selectSalaryByUserID(user.getUser_id());
-            txtSalary.setText(Float.toString( salary.getSalary_money()));
+            txtSalary.setText(Float.toString(salary.getSalary_money()));
         }
         else {
             txtSalary.setText("Wrong password!");
@@ -157,10 +160,5 @@ public class Employee_InforController implements Initializable{
     @FXML
     public void FeedbackManager() throws IOException{
         App.setRoot("Employee_FeedbackList");
-    }
-    
-    @FXML
-    public void home() throws IOException{
-        App.setRoot("Employee_Home");
     }
 }

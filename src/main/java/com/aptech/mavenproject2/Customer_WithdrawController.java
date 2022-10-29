@@ -14,11 +14,17 @@ import Models.User;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
+import javafx.util.Duration;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
@@ -31,6 +37,8 @@ import javafx.scene.control.TextField;
  * @author tuan
  */
 public class Customer_WithdrawController implements Initializable{
+    ScheduledExecutorService executor = Executors.newSingleThreadScheduledExecutor();
+
     private final UserEntity userEntity = new UserEntity();
     private final CardEntity cardEntity = new CardEntity();
     private final TransactionEntity transactionEntity = new TransactionEntity();
@@ -75,6 +83,17 @@ public class Customer_WithdrawController implements Initializable{
         }
         cards.forEach(card -> cardNumberChoiceBox.getItems().add(card.getCard_number()));
         txtFullname_header.setText("Hi, "+user.getFull_name());
+        
+        //get user card's balance every 1s
+        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(1000), e -> {
+            try {
+                getAmount();
+            } catch (SQLException ex) {
+                Logger.getLogger(Customer_WithdrawController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }));
+        timeline.setCycleCount(Animation.INDEFINITE);
+        timeline.playFromStart();
     }    
     
     @FXML
@@ -87,9 +106,8 @@ public class Customer_WithdrawController implements Initializable{
     private void getAmount() throws SQLException{
         //get data
         String card_number = cardNumberChoiceBox.getValue();
-        Card card_request= cardEntity.selectCardByCardNumber(card_number);
+        Card card_request = cardEntity.selectCardByCardNumber(card_number);
         txtBalance.setText(String.format("%.0f",card_request.getCard_balance()));
-        
     }
     
     @FXML 
@@ -145,8 +163,8 @@ public class Customer_WithdrawController implements Initializable{
         custom_Transaction.setNotice(transaction.getNotice());
         
         
-//        Thread.sleep(3000);
-//        App.setRoot("Transaction_WithdrawBill");
+        Thread.sleep(3000);
+        App.setRoot("Transaction_WithdrawBill");
         return 1;
     }
     
@@ -184,4 +202,6 @@ public class Customer_WithdrawController implements Initializable{
     private void report() throws IOException {
         App.setRoot("Customer_Report");
     }
+
+    
 }

@@ -146,7 +146,7 @@ public class Customer_GetPINController implements Initializable{
     }
     
     @FXML
-    private void cancel() throws IOException {
+    private void home() throws IOException {
         App.setRoot("Customer_Infor");
     }
     
@@ -175,8 +175,8 @@ public class Customer_GetPINController implements Initializable{
         App.setRoot("Customer_Withdraw");
     }
     
-     @FXML
-    public void home() throws IOException{
+    @FXML
+    public void returnhome() throws IOException{
         App.setRoot("Customer_Home");
     }
 }

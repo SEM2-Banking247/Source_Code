@@ -373,7 +373,7 @@ public class Transaction_TransferBillController implements Initializable{
             }  
             
             //path where the PDF file will be store
-            pdfdoc.save("/Users/Admin/Documents/NetBeansProjects/banking247/TransferBill_id"+custom_Transaction.getTransaction_id()+".pdf");
+            pdfdoc.save("/Users/tuan/NetBeansProjects/banking247/TransferBill_id"+custom_Transaction.getTransaction_id()+".pdf");
             
             //close file
             pdfdoc.close();

@@ -6,10 +6,12 @@ package com.aptech.mavenproject2;
 
 import Entities.BranchEntity;
 import Entities.CardEntity;
+import Entities.TransactionEntity;
 import Entities.UserEntity;
 import Models.Branch;
 import Models.Card;
 import Models.Custom_Card;
+import Models.Transaction;
 import Models.User;
 import java.io.IOException;
 import java.net.URL;
@@ -38,6 +40,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
  * @author Admin
  */
 public class Employee_CardListController implements Initializable {
+    private final TransactionEntity transactionEntity = new TransactionEntity();
     private final CardEntity cardEntity = new CardEntity();
     private final UserEntity userEntity = new UserEntity();
     private final BranchEntity branchEntity = new BranchEntity();
@@ -168,13 +171,34 @@ public class Employee_CardListController implements Initializable {
         //if the user select a card from the table, its update, otherwise its add.
         if (selected_card != null) {
             card.setCard_infor_id(selected_card.getCard_infor_id());
+            Card card_request = cardEntity.selectCardById(selected_card.getCard_infor_id());
+            User user_request = userEntity.selectUserById(card_request.getUser_id());
             
             //update card info
             cardEntity.updateCardInfo(card);
-            //update card balance
-            cardEntity.updateCardBalanceByCardId(card.getCard_infor_id(), card.getCard_balance());
-            txtNotification.setText("Card Updated!");
+            
+            //if the employee increase the customer's balance
+            if(Double.parseDouble(Card_balance) > card_request.getCard_balance()) {
+                 //update card balance
+                cardEntity.updateCardBalanceByCardId(card.getCard_infor_id(), card.getCard_balance());
+            
+                //add transaction
+                Transaction transaction = new Transaction();
+                transaction.setTransaction_type_id(2);
+                transaction.setCard_id_request(card_request.getCard_infor_id());
+                transaction.setCard_id_receiver(card_request.getCard_infor_id());
+                transaction.setAcc_number_request(user_request.getAccount_number());
+                transaction.setAcc_number_receiver(user_request.getAccount_number());  
+                transaction.setTransaction_amount(Double.parseDouble(Card_balance) - card_request.getCard_balance());
+                transaction.setNew_balance_request(Double.parseDouble(Card_balance));
+                transaction.setNew_balance_receiver(Double.parseDouble(Card_balance));
+                transaction.setNotice("Added by "+selected_branch.getBranch_name());
+                transaction.setTransaction_date(LocalDate.now());
+                transactionEntity.addTransaction(transaction);
+            }
+            
             refresh();
+            txtNotification.setText("Card Updated!");
         }
         else {
             //add

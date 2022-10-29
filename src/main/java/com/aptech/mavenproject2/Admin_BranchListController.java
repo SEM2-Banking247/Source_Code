@@ -183,7 +183,7 @@ public class Admin_BranchListController implements Initializable {
         txtPhone.setText(selected_branch.getBranch_phone());
     }
 
-     @FXML
+    @FXML
     private void logout() throws IOException {
         App.setRoot("Login");
     }

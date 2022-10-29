@@ -190,15 +190,7 @@ public class Admin_SalaryController implements Initializable {
         ColHrdate.setCellValueFactory(new PropertyValueFactory<>("Hr_date"));
         ColUpdate.setCellValueFactory(new PropertyValueFactory<>("Update_date"));
         
-        TvSalary.setItems(FXCollections.observableArrayList(custom_salaries));     
-        
-//        ColAccountNumber.setCellValueFactory(new PropertyValueFactory<>("Account_number"));
-//        ColFullName.setCellValueFactory(new PropertyValueFactory<>("Full_name"));
-//        ColSalary.setCellValueFactory(new PropertyValueFactory<>("Salary_money"));
-//        ColHrdate.setCellValueFactory(new PropertyValueFactory<>("Hr_date"));
-//        ColUpdate.setCellValueFactory(new PropertyValueFactory<>("Update_date"));
-//        
-//        TvSalary.setItems(FXCollections.observableArrayList(custom_salaries));     
+        TvSalary.setItems(FXCollections.observableArrayList(custom_salaries));       
         
         txtCount.setText("Result: "+(custom_salaries.size()));
     }
@@ -213,6 +205,7 @@ public class Admin_SalaryController implements Initializable {
         clear();
     }
     
+    @FXML
     public void ShowSalaryDetail() throws SQLException{
         Custom_Salary salary_select = TvSalary.getSelectionModel().getSelectedItem();
 
@@ -221,6 +214,7 @@ public class Admin_SalaryController implements Initializable {
         txtUserCode.setText(salary_select.getAccount_number());
     }
     
+    @FXML
     public void clear(){
         txtFindname.setText("");
         txtHrDate.setText("");
@@ -228,7 +222,7 @@ public class Admin_SalaryController implements Initializable {
         txtUserCode.setText("");
         txtNotification.setText("");
     }
-
+    
     @FXML
     public void salaryManager() throws IOException{
         App.setRoot("Admin_Salary");
