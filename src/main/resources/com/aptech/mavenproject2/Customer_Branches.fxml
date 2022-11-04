@@ -21,16 +21,16 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="800.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Customer_BranchesController">
+<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="784.0" prefWidth="1089.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Customer_BranchesController">
    <bottom>
       <AnchorPane prefHeight="76.0" prefWidth="1029.0" style="-fx-background-color: #deed87;" BorderPane.alignment="CENTER">
          <children>
-            <ImageView disable="true" fitHeight="50.0" fitWidth="65.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="50.0" fitWidth="65.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../IMG/Logo.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="935.0" layoutY="39.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
+            <Label layoutX="750.0" layoutY="27.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
                <font>
                   <Font name="Arial Bold Italic" size="16.0" />
                </font>
@@ -55,11 +55,6 @@
                      </stops>
                   </RadialGradient>
                </textFill>
-            </Label>
-            <Label layoutX="935.0" layoutY="10.0" prefHeight="28.0" prefWidth="170.0" text="54 - Le Thanh Nghi Str" textFill="#f80000">
-               <font>
-                  <Font name="Arial Bold Italic" size="16.0" />
-               </font>
             </Label>
          </children>
       </AnchorPane>
@@ -88,7 +83,7 @@
                   </RadialGradient>
                </textFill>
             </Label>
-            <Button layoutX="1022.0" layoutY="21.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="WHITE">
+            <Button layoutX="872.0" layoutY="22.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -99,49 +94,44 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" layoutX="523.0" layoutY="23.0" prefHeight="27.0" prefWidth="452.0" textFill="RED">
+            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" layoutX="403.0" layoutY="23.0" prefHeight="27.0" prefWidth="452.0" textFill="RED">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <ImageView disable="true" fitHeight="40.0" fitWidth="50.0" layoutX="975.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../IMG/icon_user.png" />
-               </image>
-            </ImageView>
          </children>
       </AnchorPane>
    </top>
    <left>
       <AnchorPane prefHeight="634.0" prefWidth="196.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="19.0" layoutY="200.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="52.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="WITHDRAW" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="196.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="52.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="WITHDRAW" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="LOCAL_ATM" />
                </graphic>-->
             </Button>
-            <Button layoutX="19.0" layoutY="281.0" mnemonicParsing="false" onAction="#transfer" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSFER" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="276.0" mnemonicParsing="false" onAction="#transfer" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSFER" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="LOCAL_ATM" />
                </graphic>-->
             </Button>
-            <Button layoutX="19.0" layoutY="118.0" mnemonicParsing="false" onAction="#showInfor" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="INFORMATION" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="116.0" mnemonicParsing="false" onAction="#showInfor" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="INFORMATION" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="INSERT_EMOTICON" />
                </graphic>-->
             </Button>
-            <Button layoutX="19.0" layoutY="364.0" mnemonicParsing="false" onAction="#report" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="REPORT" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="355.0" mnemonicParsing="false" onAction="#report" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="REPORT" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="WARNING" />
                </graphic>-->
             </Button>
-            <Button layoutX="20.0" layoutY="445.0" mnemonicParsing="false" onAction="#showHistory" prefHeight="51.0" prefWidth="157.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSACTIONS" textFill="WHITE">
+            <Button layoutX="16.0" layoutY="436.0" mnemonicParsing="false" onAction="#showHistory" prefHeight="51.0" prefWidth="157.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSACTIONS" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="TIMELINE" />
                </graphic>-->
             </Button>
-            <Button layoutX="20.0" layoutY="522.0" mnemonicParsing="false" onAction="#showBranches" prefHeight="51.0" prefWidth="157.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="BRANCHES" textFill="WHITE" />
-            <Button layoutX="19.0" layoutY="43.0" mnemonicParsing="false" onAction="#home" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME PAGE" textFill="WHITE" />
+            <Button layoutX="16.0" layoutY="519.0" mnemonicParsing="false" onAction="#showBranches" prefHeight="51.0" prefWidth="157.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="BRANCHES" textFill="WHITE" />
+            <Button layoutX="15.0" layoutY="38.0" mnemonicParsing="false" onAction="#home" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME" textFill="WHITE" />
          </children>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -173,24 +163,19 @@
    <right>
       <VBox accessibleRole="TABLE_VIEW" nodeOrientation="LEFT_TO_RIGHT" prefHeight="599.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView disable="true" fitHeight="150.0" fitWidth="205.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="150.0" fitWidth="205.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../IMG/Logo.jpg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../IMG/Img_right1.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../IMG/img_right2.jpg" />
-               </image>
-            </ImageView>
-            <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../IMG/img_right3.jpeg" />
                </image>
             </ImageView>
          </children>
@@ -199,14 +184,14 @@
    <center>
       <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <content>
-            <AnchorPane prefHeight="635.0" prefWidth="783.0">
+            <AnchorPane prefHeight="635.0" prefWidth="692.0">
                <children>
                   <Label layoutX="22.0" layoutY="25.0" prefHeight="27.0" prefWidth="360.0" text="Ecombank Agency ">
                      <font>
                         <Font name="System Bold" size="22.0" />
                      </font>
                   </Label>
-                  <Pane layoutX="72.0" layoutY="78.0" prefHeight="528.0" prefWidth="639.0" style="-fx-background-color: #FFFFCC;">
+                  <Pane layoutX="23.0" layoutY="80.0" prefHeight="528.0" prefWidth="639.0" style="-fx-background-color: #FFFFCC;">
                      <children>
                         <Label layoutX="175.0" layoutY="22.0" prefHeight="18.0" prefWidth="267.0" text="ECOMBANK Hoang Mai">
                            <font>
@@ -228,19 +213,19 @@
                         </Label>
                         <Label layoutX="177.0" layoutY="395.0" prefHeight="18.0" prefWidth="442.0" text="Address: 276C Van Phuc st, Ba Dinh District, Hanoi" />
                         <Label layoutX="177.0" layoutY="433.0" prefHeight="18.0" prefWidth="263.0" text="09.342.357.786" />
-                        <ImageView disable="true" fitHeight="153.0" fitWidth="155.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="153.0" fitWidth="155.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../IMG/310251782_497465522272802_5930076391233998311_n.jpg" />
+                              <Image url="@img/310251782_497465522272802_5930076391233998311_n.jpeg" />
                            </image>
                         </ImageView>
-                        <ImageView disable="true" fitHeight="89.0" fitWidth="155.0" layoutX="14.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="89.0" fitWidth="155.0" layoutX="14.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../IMG/310564557_1259420548213471_5539870565645227057_n.jpg" />
+                              <Image url="@img/310564557_1259420548213471_5539870565645227057_n.jpeg" />
                            </image>
                         </ImageView>
-                        <ImageView disable="true" fitHeight="117.0" fitWidth="157.0" layoutX="13.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="117.0" fitWidth="157.0" layoutX="13.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../IMG/310581757_1144960736402152_8941679760242433892_n.jpg" />
+                              <Image url="@img/310581757_1144960736402152_8941679760242433892_n.jpeg" />
                            </image>
                         </ImageView>
                         <Label layoutX="177.0" layoutY="264.0" text="09.112.224.343" />

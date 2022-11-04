@@ -21,16 +21,16 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="800.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Customer_HomeController">
+<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="747.0" prefWidth="1059.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Customer_HomeController">
    <bottom>
       <AnchorPane prefHeight="76.0" prefWidth="1029.0" style="-fx-background-color: #deed87;" BorderPane.alignment="CENTER">
          <children>
-            <ImageView disable="true" fitHeight="50.0" fitWidth="65.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="50.0" fitWidth="65.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../IMG/Logo.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="923.0" layoutY="41.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
+            <Label layoutX="750.0" layoutY="27.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
                <font>
                   <Font name="Arial Bold Italic" size="16.0" />
                </font>
@@ -55,11 +55,6 @@
                      </stops>
                   </RadialGradient>
                </textFill>
-            </Label>
-            <Label layoutX="923.0" layoutY="13.0" prefHeight="28.0" prefWidth="170.0" text="54 - Le Thanh Nghi Str" textFill="#f80000">
-               <font>
-                  <Font name="Arial Bold Italic" size="16.0" />
-               </font>
             </Label>
          </children>
       </AnchorPane>
@@ -88,7 +83,7 @@
                   </RadialGradient>
                </textFill>
             </Label>
-            <Button layoutX="1018.0" layoutY="22.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="WHITE">
+            <Button layoutX="923.0" layoutY="24.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -99,49 +94,44 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" ellipsisString="" layoutX="635.0" layoutY="24.0" prefHeight="26.0" prefWidth="324.0" textFill="#e40c0c">
+            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" ellipsisString="" layoutX="590.0" layoutY="26.0" prefHeight="26.0" prefWidth="324.0" textFill="#e40c0c">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <ImageView disable="true" fitHeight="40.0" fitWidth="50.0" layoutX="968.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../IMG/icon_user.png" />
-               </image>
-            </ImageView>
          </children>
       </AnchorPane>
    </top>
    <left>
       <AnchorPane prefHeight="596.0" prefWidth="198.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="17.0" layoutY="102.0" mnemonicParsing="false" onAction="#showInfor" prefHeight="52.0" prefWidth="162.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="INFORMATION" textFill="#f5f0f0">
+            <Button layoutX="16.0" layoutY="101.0" mnemonicParsing="false" onAction="#showInfor" prefHeight="52.0" prefWidth="162.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="INFORMATION" textFill="#f5f0f0">
 <!--               <graphic>
                   <Icon content="INSERT_EMOTICON" />
                </graphic>-->
             </Button>
-            <Button layoutX="19.0" layoutY="179.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="WITHDRAW" textFill="#fffdfd">
+            <Button layoutX="18.0" layoutY="177.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="WITHDRAW" textFill="#fffdfd">
 <!--               <graphic>
                   <Icon content="LOCAL_ATM" />
                </graphic>-->
             </Button>
-            <Button layoutX="19.0" layoutY="256.0" mnemonicParsing="false" onAction="#transfer" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSFER" textFill="#f2f0f0">
+            <Button layoutX="18.0" layoutY="255.0" mnemonicParsing="false" onAction="#transfer" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSFER" textFill="#f2f0f0">
 <!--               <graphic>
                   <Icon content="LOCAL_ATM" />
                </graphic>-->
             </Button>
-            <Button layoutX="21.0" layoutY="410.0" mnemonicParsing="false" onAction="#showHistory" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSACTIONS" textFill="WHITE">
+            <Button layoutX="20.0" layoutY="408.0" mnemonicParsing="false" onAction="#showHistory" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSACTIONS" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="TIMELINE" />
                </graphic>-->
             </Button>
-            <Button layoutX="22.0" layoutY="333.0" mnemonicParsing="false" onAction="#report" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="REPORT" textFill="WHITE">
+            <Button layoutX="20.0" layoutY="331.0" mnemonicParsing="false" onAction="#report" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="REPORT" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="WARNING" />
                </graphic>-->
             </Button>
-            <Button layoutX="19.0" layoutY="488.0" mnemonicParsing="false" onAction="#showBranches" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="BRANCHES" textFill="WHITE" />
-            <Button layoutX="17.0" layoutY="29.0" mnemonicParsing="false" onAction="#home" prefHeight="52.0" prefWidth="162.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME PAGE" textFill="#f5f0f0" />
+            <Button layoutX="16.0" layoutY="489.0" mnemonicParsing="false" onAction="#showBranches" prefHeight="51.0" prefWidth="162.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="BRANCHES" textFill="WHITE" />
+            <Button layoutX="16.0" layoutY="28.0" mnemonicParsing="false" onAction="#home" prefHeight="52.0" prefWidth="162.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME" textFill="#f5f0f0" />
          </children>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -173,24 +163,24 @@
    <right>
       <VBox accessibleRole="TABLE_VIEW" nodeOrientation="LEFT_TO_RIGHT" prefHeight="599.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/login-banner.jpeg" />
+                  <Image url="@img/login-banner.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/Img_right1.jpeg" />
+                  <Image url="@img/Img_right1.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/img_right2.jpeg" />
+                  <Image url="@img/img_right2.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/img_right3.jpeg" />
+                  <Image url="@img/img_right3.jpeg" />
                </image>
             </ImageView>
          </children>
@@ -199,7 +189,7 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="199.0" layoutY="46.0" prefHeight="47.0" prefWidth="376.0" text=" WELCOME TO ECOMBANK" textAlignment="CENTER">
+            <Label layoutX="179.0" layoutY="43.0" prefHeight="47.0" prefWidth="376.0" text=" WELCOME TO ECOMBANK" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="27.0" />
                </font>
@@ -220,7 +210,7 @@
                   </RadialGradient>
                </textFill>
             </Label>
-            <Label layoutX="274.0" layoutY="93.0" prefHeight="47.0" prefWidth="227.0" text="Keep your faith intact">
+            <Label layoutX="254.0" layoutY="90.0" prefHeight="47.0" prefWidth="227.0" text="Keep your faith intact">
                <font>
                   <Font name="System Bold Italic" size="22.0" />
                </font>
@@ -241,9 +231,14 @@
                   </RadialGradient>
                </textFill>
             </Label>
-            <ImageView disable="true" fitHeight="494.0" fitWidth="647.0" layoutX="70.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="397.0" fitWidth="637.0" layoutX="11.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../IMG/center_img.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="401.0" fitWidth="568.0" layoutX="72.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/login-banner.jpeg" />
                </image>
             </ImageView>
          </children>

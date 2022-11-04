@@ -23,7 +23,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="800.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Admin_BranchListController">
+<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="784.0" prefWidth="1089.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Admin_BranchListController">
    <bottom>
       <AnchorPane prefHeight="76.0" prefWidth="1029.0" style="-fx-background-color: #deed87;" BorderPane.alignment="CENTER">
          <children>
@@ -32,7 +32,7 @@
                   <Image url="@../../../IMG/Logo.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="935.0" layoutY="39.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
+            <Label layoutX="750.0" layoutY="27.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
                <font>
                   <Font name="Arial Bold Italic" size="16.0" />
                </font>
@@ -57,11 +57,6 @@
                      </stops>
                   </RadialGradient>
                </textFill>
-            </Label>
-            <Label layoutX="935.0" layoutY="10.0" prefHeight="28.0" prefWidth="170.0" text="54-Le Thanh Nghi Str" textFill="#f80000">
-               <font>
-                  <Font name="Arial Bold Italic" size="16.0" />
-               </font>
             </Label>
          </children>
       </AnchorPane>
@@ -90,7 +85,7 @@
                   </RadialGradient>
                </textFill>
             </Label>
-            <Button layoutX="1030.0" layoutY="21.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="#f5f0f0">
+            <Button layoutX="840.0" layoutY="29.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="#f5f0f0">
                <font>
                   <Font size="15.0" />
                </font>
@@ -98,26 +93,21 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" layoutX="613.0" layoutY="21.0" prefHeight="31.0" prefWidth="365.0" textFill="RED">
+            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" layoutX="461.0" layoutY="28.0" prefHeight="31.0" prefWidth="365.0" textFill="RED">
                <font>
                   <Font size="15.0" />
                </font></Label>
-            <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="978.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../IMG/icon_user.png" />
-               </image>
-            </ImageView>
          </children>
       </AnchorPane>
    </top>
    <left>
       <AnchorPane prefHeight="593.0" prefWidth="189.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="15.0" layoutY="194.0" mnemonicParsing="false" onAction="#userManager" prefHeight="52.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="USER MANAGER" textFill="#f8f4f4" />
-            <Button layoutX="15.0" layoutY="277.0" mnemonicParsing="false" onAction="#cardManager" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="CARD MANAGER" textFill="#fcf6f6" />
-            <Button layoutX="12.0" layoutY="114.0" mnemonicParsing="false" onAction="#branchManager" prefHeight="51.0" prefWidth="166.0" style="-fx-background-color: black; -fx-background-radius: 10;" text=" BRANCH MANAGER" textFill="#f8f4f4" />
-            <Button layoutX="15.0" layoutY="358.0" mnemonicParsing="false" onAction="#salaryManager" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="SALARY MANAGER" textFill="#f8f5f5" />
-            <Button layoutX="12.0" layoutY="32.0" mnemonicParsing="false" onAction="#home" prefHeight="51.0" prefWidth="166.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME PAGE" textFill="#f8f4f4" />
+            <Button layoutX="15.0" layoutY="182.0" mnemonicParsing="false" onAction="#userManager" prefHeight="52.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="USER MANAGER" textFill="#f8f4f4" />
+            <Button layoutX="16.0" layoutY="267.0" mnemonicParsing="false" onAction="#cardManager" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="CARD MANAGER" textFill="#fcf6f6" />
+            <Button layoutX="16.0" layoutY="100.0" mnemonicParsing="false" onAction="#branchManager" prefHeight="51.0" prefWidth="157.0" style="-fx-background-color: black; -fx-background-radius: 10;" text=" BRANCH MANAGER" textFill="#f8f4f4" />
+            <Button layoutX="16.0" layoutY="344.0" mnemonicParsing="false" onAction="#salaryManager" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="SALARY MANAGER" textFill="#f8f5f5" />
+            <Button layoutX="17.0" layoutY="24.0" mnemonicParsing="false" onAction="#home" prefHeight="51.0" prefWidth="157.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME" textFill="#f8f4f4" />
          </children>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -149,24 +139,24 @@
    <right>
       <VBox accessibleRole="TABLE_VIEW" nodeOrientation="LEFT_TO_RIGHT" prefHeight="599.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/login-banner.jpeg" />
+                  <Image url="@img/login-banner.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/Img_right1.jpeg" />
+                  <Image url="@img/Img_right1.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/img_right2.jpeg" />
+                  <Image url="@img/img_right2.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/img_right3.jpeg" />
+                  <Image url="@img/img_right3.jpeg" />
                </image>
             </ImageView>
          </children>
@@ -175,14 +165,14 @@
    <center>
       <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <content>
-            <AnchorPane prefHeight="651.0" prefWidth="777.0">
+            <AnchorPane prefHeight="635.0" prefWidth="692.0">
                <children>
                   <Label layoutX="35.0" layoutY="26.0" text="BRANCH  MANAGER">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <TableView fx:id="TvBranchList" accessibleRole="MENU" cache="true" layoutX="84.0" layoutY="341.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#showBranchDetail" prefHeight="281.0" prefWidth="628.0" style="-fx-border-color: gray;">
+                  <TableView fx:id="TvBranchList" accessibleRole="MENU" cache="true" layoutX="32.0" layoutY="340.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#showBranchDetail" prefHeight="281.0" prefWidth="628.0" style="-fx-border-color: gray;">
                     <columns>
                       <TableColumn fx:id="NumberColmn" prefWidth="97.0" sortType="DESCENDING" text="Number" />
                       <TableColumn fx:id="BranchColmn" prefWidth="145.0" text="Branch Name" />
@@ -194,7 +184,7 @@
                         <Cursor fx:constant="DEFAULT" />
                      </cursor>
                   </TableView>
-                  <Button fx:id="btnSave" layoutX="221.0" layoutY="303.0" mnemonicParsing="false" onAction="#Save" style="-fx-background-color: green; -fx-background-radius: 10;" text="Save" textFill="#fcf9f9">
+                  <Button fx:id="btnSave" layoutX="173.0" layoutY="304.0" mnemonicParsing="false" onAction="#Save" style="-fx-background-color: green; -fx-background-radius: 10;" text="Save" textFill="#fcf9f9">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -202,7 +192,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="btnRefresh" layoutX="290.0" layoutY="303.0" mnemonicParsing="false" onAction="#Refresh" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Refresh" textFill="#f2f2f2">
+                  <Button fx:id="btnRefresh" layoutX="242.0" layoutY="304.0" mnemonicParsing="false" onAction="#Refresh" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Refresh" textFill="#f2f2f2">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -210,7 +200,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="btnReset" layoutX="368.0" layoutY="303.0" mnemonicParsing="false" onAction="#Reset" style="-fx-background-color: orange; -fx-background-radius: 10;" text="Reset" textFill="#f8efef">
+                  <Button fx:id="btnReset" layoutX="320.0" layoutY="304.0" mnemonicParsing="false" onAction="#Reset" style="-fx-background-color: orange; -fx-background-radius: 10;" text="Reset" textFill="#f8efef">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -218,7 +208,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="btnFind" layoutX="445.0" layoutY="303.0" mnemonicParsing="false" onAction="#FInd" style="-fx-background-color: blue; -fx-background-radius: 10;" text="Find" textFill="#f2eeee">
+                  <Button fx:id="btnFind" layoutX="397.0" layoutY="304.0" mnemonicParsing="false" onAction="#FInd" style="-fx-background-color: blue; -fx-background-radius: 10;" text="Find" textFill="#f2eeee">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -226,7 +216,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button fx:id="btnDelete" layoutX="517.0" layoutY="303.0" mnemonicParsing="false" onAction="#Delete" style="-fx-background-color: red; -fx-background-radius: 10;" text="Delete" textFill="#f2f0f0">
+                  <Button fx:id="btnDelete" layoutX="469.0" layoutY="304.0" mnemonicParsing="false" onAction="#Delete" style="-fx-background-color: red; -fx-background-radius: 10;" text="Delete" textFill="#f2f0f0">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -239,7 +229,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <AnchorPane layoutX="147.0" layoutY="73.0" prefHeight="218.0" prefWidth="503.0" style="-fx-background-color: gray;">
+                  <AnchorPane layoutX="112.0" layoutY="73.0" prefHeight="218.0" prefWidth="503.0" style="-fx-background-color: gray;">
                      <children>
                         <Label layoutX="33.0" layoutY="41.0" text="Branch Name:" textFill="WHITE">
                            <font>

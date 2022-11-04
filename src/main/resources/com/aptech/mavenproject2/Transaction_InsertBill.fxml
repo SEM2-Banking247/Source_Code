@@ -29,7 +29,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button layoutX="581.0" layoutY="87.0" mnemonicParsing="false" style="-fx-background-color: orange; -fx-background-radius: 15;" text="Print Bill" textFill="#fffafa">
+                  <Button layoutX="581.0" layoutY="87.0" mnemonicParsing="false" onAction="#printBill" style="-fx-background-color: orange; -fx-background-radius: 15;" text="Print Bill" textFill="#fffafa">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -118,7 +118,7 @@
                         <Font size="10.0" />
                      </font>
                   </Label>
-                  <Label fx:id="txtTransactionId" layoutX="232.0" layoutY="414.0" prefHeight="42.0" prefWidth="192.0" />
+                  <Label fx:id="txtTransactionId" layoutX="232.0" layoutY="414.0" prefHeight="42.0" prefWidth="192.0" text="Transaction ID" />
                   <Label fx:id="txtTransactionDate" layoutX="128.0" layoutY="145.0" prefHeight="33.0" prefWidth="222.0" text="Transaction Date" textAlignment="RIGHT">
                      <font>
                         <Font size="10.0" />

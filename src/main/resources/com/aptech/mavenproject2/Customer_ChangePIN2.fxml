@@ -22,16 +22,16 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="800.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Customer_ChangePIN2Controller">
+<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="784.0" prefWidth="1089.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Customer_ChangePIN2Controller">
    <bottom>
       <AnchorPane prefHeight="76.0" prefWidth="1029.0" style="-fx-background-color: #deed87;" BorderPane.alignment="CENTER">
          <children>
-            <ImageView disable="true" fitHeight="50.0" fitWidth="65.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="50.0" fitWidth="65.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../IMG/Logo.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="945.0" layoutY="39.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
+            <Label layoutX="750.0" layoutY="27.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
                <font>
                   <Font name="Arial Bold Italic" size="16.0" />
                </font>
@@ -56,11 +56,6 @@
                      </stops>
                   </RadialGradient>
                </textFill>
-            </Label>
-            <Label layoutX="945.0" layoutY="10.0" prefHeight="28.0" prefWidth="170.0" text="54 - Le Thanh Nghi Str" textFill="#f80000">
-               <font>
-                  <Font name="Arial Bold Italic" size="16.0" />
-               </font>
             </Label>
          </children>
       </AnchorPane>
@@ -89,7 +84,7 @@
                   </RadialGradient>
                </textFill>
             </Label>
-            <Button layoutX="1020.0" layoutY="22.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="#fcf8f8">
+            <Button layoutX="910.0" layoutY="22.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="#fcf8f8">
                <font>
                   <Font size="15.0" />
                </font>
@@ -100,16 +95,11 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" layoutX="679.0" layoutY="21.0" prefHeight="33.0" prefWidth="294.0" textFill="RED">
+            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" layoutX="611.0" layoutY="21.0" prefHeight="33.0" prefWidth="294.0" text="Customer Name" textFill="RED">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="973.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../IMG/icon_user.png" />
-               </image>
-            </ImageView>
          </children>
       </AnchorPane>
    </top>
@@ -120,29 +110,29 @@
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Button layoutX="15.0" layoutY="279.0" mnemonicParsing="false" onAction="#transfer" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSFER" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="277.0" mnemonicParsing="false" onAction="#transfer" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSFER" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Button layoutX="15.0" layoutY="114.0" mnemonicParsing="false" onAction="#showInfor" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="INFORMATION" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="111.0" mnemonicParsing="false" onAction="#showInfor" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="INFORMATION" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Button layoutX="15.0" layoutY="360.0" mnemonicParsing="false" onAction="#report" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="REPORT" textFill="#f2eded">
+            <Button layoutX="15.0" layoutY="351.0" mnemonicParsing="false" onAction="#report" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="REPORT" textFill="#f2eded">
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Button layoutX="15.0" layoutY="439.0" mnemonicParsing="false" onAction="#showHistory" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSACTIONS" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="427.0" mnemonicParsing="false" onAction="#showHistory" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSACTIONS" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button layoutX="15.0" layoutY="521.0" mnemonicParsing="false" onAction="#showBranches" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="BRANCHES" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="504.0" mnemonicParsing="false" onAction="#showBranches" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="BRANCHES" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button layoutX="15.0" layoutY="35.0" mnemonicParsing="false" onAction="#home" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME PAGE" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="33.0" mnemonicParsing="false" onAction="#home" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -176,26 +166,26 @@
       </AnchorPane>
    </left>
    <right>
-      <VBox accessibleRole="TABLE_VIEW" nodeOrientation="LEFT_TO_RIGHT" prefHeight="628.0" prefWidth="201.0">
+      <VBox accessibleRole="TABLE_VIEW" nodeOrientation="LEFT_TO_RIGHT" prefHeight="599.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView disable="true" fitHeight="175.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/login-banner.jpeg" />
+                  <Image url="@img/login-banner.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/Img_right1.jpeg" />
+                  <Image url="@img/Img_right1.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/img_right2.jpeg" />
+                  <Image url="@img/img_right2.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/img_right3.jpeg" />
+                  <Image url="@img/img_right3.jpeg" />
                </image>
             </ImageView>
          </children>
@@ -204,28 +194,28 @@
    <center>
       <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <content>
-            <AnchorPane prefHeight="635.0" prefWidth="782.0">
+            <AnchorPane prefHeight="635.0" prefWidth="692.0">
                <children>
                   <Text layoutX="31.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHANGE MY PIN CODE" wrappingWidth="524.92578125">
                      <font>
                         <Font name="System Bold Italic" size="31.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="txtOldPIN" layoutX="349.0" layoutY="161.0" prefHeight="24.0" prefWidth="287.0" promptText="4 digits">
+                  <TextField fx:id="txtOldPIN" layoutX="257.0" layoutY="164.0" prefHeight="24.0" prefWidth="287.0" promptText="4 digits">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </TextField>
-                  <Button layoutX="319.0" layoutY="411.0" mnemonicParsing="false" onAction="#changePIN" prefHeight="55.0" prefWidth="105.0" style="-fx-background-color: green; -fx-background-radius: 20;" text="Change PIN" textFill="#f8f7f7">
+                  <Button layoutX="185.0" layoutY="424.0" mnemonicParsing="false" onAction="#changePIN" prefHeight="55.0" prefWidth="105.0" style="-fx-background-color: green; -fx-background-radius: 20;" text="Change PIN" textFill="#f8f7f7">
                      <font>
                         <Font name="System Bold Italic" size="15.0" />
                      </font>
                   </Button>
-                  <TextField fx:id="txtNewPIN" layoutX="349.0" layoutY="240.0" prefHeight="22.0" prefWidth="286.0" promptText="4 digits">
+                  <TextField fx:id="txtNewPIN" layoutX="257.0" layoutY="243.0" prefHeight="22.0" prefWidth="286.0" promptText="4 digits">
                      <font>
                         <Font size="15.0" />
                      </font></TextField>
-                  <TextField fx:id="txtVerifyNewPIN" layoutX="347.0" layoutY="313.0" prefHeight="22.0" prefWidth="292.0" promptText="4 digits">
+                  <TextField fx:id="txtVerifyNewPIN" layoutX="255.0" layoutY="316.0" prefHeight="22.0" prefWidth="292.0" promptText="4 digits">
                      <font>
                         <Font size="15.0" />
                      </font></TextField>
@@ -234,22 +224,22 @@
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Button layoutX="441.0" layoutY="411.0" mnemonicParsing="false" onAction="#home" prefHeight="55.0" prefWidth="103.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Cancel" textFill="#f8f7f7">
+                  <Button layoutX="307.0" layoutY="424.0" mnemonicParsing="false" onAction="#home" prefHeight="55.0" prefWidth="103.0" style="-fx-background-color: red; -fx-background-radius: 20;" text="Cancel" textFill="#f8f7f7">
                      <font>
                         <Font name="System Bold Italic" size="15.0" />
                      </font>
                   </Button>
-                  <Label layoutX="123.0" layoutY="308.0" prefHeight="36.0" prefWidth="164.0" text="Re-enter new PIN code:">
+                  <Label layoutX="31.0" layoutY="311.0" prefHeight="36.0" prefWidth="164.0" text="Re-enter new PIN code:">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="123.0" layoutY="243.0" prefHeight="19.0" prefWidth="208.0" text="Enter new Pin code (4 figure):">
+                  <Label layoutX="31.0" layoutY="246.0" prefHeight="19.0" prefWidth="208.0" text="Enter new Pin code (4 figure):">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="121.0" layoutY="160.0" prefHeight="26.0" prefWidth="215.0" text="Enter your old Pin Code here:">
+                  <Label layoutX="29.0" layoutY="163.0" prefHeight="26.0" prefWidth="215.0" text="Enter your old Pin Code here:">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -259,17 +249,17 @@
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label fx:id="ValidateOldPIN" layoutX="295.0" layoutY="204.0" prefHeight="26.0" prefWidth="371.0" textFill="RED">
+                  <Label fx:id="ValidateOldPIN" layoutX="257.0" layoutY="198.0" prefHeight="26.0" prefWidth="371.0" textFill="RED">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label fx:id="ValidateNewPIN" layoutX="295.0" layoutY="281.0" prefHeight="26.0" prefWidth="371.0" textFill="RED">
+                  <Label fx:id="ValidateNewPIN" layoutX="257.0" layoutY="275.0" prefHeight="26.0" prefWidth="371.0" textFill="RED">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Label>
-                  <Label fx:id="ValidateConfirmPIN" layoutX="293.0" layoutY="353.0" prefHeight="26.0" prefWidth="371.0" textFill="RED">
+                  <Label fx:id="ValidateConfirmPIN" layoutX="255.0" layoutY="347.0" prefHeight="26.0" prefWidth="371.0" textFill="RED">
                      <font>
                         <Font size="15.0" />
                      </font>

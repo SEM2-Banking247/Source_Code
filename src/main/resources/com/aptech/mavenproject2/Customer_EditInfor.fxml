@@ -20,16 +20,16 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="800.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Customer_EditInforController">
+<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="747.0" prefWidth="1059.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Customer_EditInforController">
    <bottom>
       <AnchorPane prefHeight="76.0" prefWidth="1029.0" style="-fx-background-color: #deed87;" BorderPane.alignment="CENTER">
          <children>
-            <ImageView disable="true" fitHeight="50.0" fitWidth="65.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="50.0" fitWidth="65.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/Logo.jpg" />
+                  <Image url="@../../../../../../../../Downloads/304817049_1119370075680704_5718581842929049222_n.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="935.0" layoutY="38.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
+            <Label layoutX="750.0" layoutY="27.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
                <font>
                   <Font name="Arial Bold Italic" size="16.0" />
                </font>
@@ -54,11 +54,6 @@
                      </stops>
                   </RadialGradient>
                </textFill>
-            </Label>
-            <Label layoutX="935.0" layoutY="10.0" prefHeight="28.0" prefWidth="170.0" text="54 - Le Thanh Nghi Str" textFill="#f80000">
-               <font>
-                  <Font name="Arial Bold Italic" size="16.0" />
-               </font>
             </Label>
          </children>
       </AnchorPane>
@@ -88,7 +83,7 @@
                </textFill>
             </Label>
 <!--            <Icon content="HELP_OUTLINE" />-->
-            <Button layoutX="1031.0" layoutY="24.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="WHITE">
+            <Button layoutX="818.0" layoutY="24.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -99,45 +94,40 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" layoutX="596.0" layoutY="25.0" prefHeight="30.0" prefWidth="386.0" style="-fx-text-alignment: right;" textFill="#e11010">
+            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" layoutX="415.0" layoutY="24.0" prefHeight="30.0" prefWidth="386.0" style="-fx-text-alignment: right;" textFill="#e11010">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <ImageView disable="true" fitHeight="40.0" fitWidth="50.0" layoutX="982.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../IMG/icon_user.png" />
-               </image>
-            </ImageView>
          </children>
       </AnchorPane>
    </top>
    <left>
       <AnchorPane prefHeight="593.0" prefWidth="189.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="16.0" layoutY="160.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="52.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="WITHDRAW" textAlignment="CENTER" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="208.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="52.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="WITHDRAW" textAlignment="CENTER" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="ASSIGNMENT_IND" />
                </graphic>-->
             </Button>
-            <Button layoutX="16.0" layoutY="242.0" mnemonicParsing="false" onAction="#transfer" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSFER" textAlignment="CENTER" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="290.0" mnemonicParsing="false" onAction="#transfer" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSFER" textAlignment="CENTER" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="ASSIGNMENT_IND" />
                </graphic>-->
             </Button>
-            <Button layoutX="15.0" layoutY="93.0" mnemonicParsing="false" onAction="#showInfor" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="INFORMATION" textAlignment="CENTER" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="128.0" mnemonicParsing="false" onAction="#showInfor" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="INFORMATION" textAlignment="CENTER" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="ACCOUNT_BALANCE" />
                </graphic>-->
             </Button>
-            <Button layoutX="16.0" layoutY="322.0" mnemonicParsing="false" onAction="#report" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="REPORT" textAlignment="CENTER" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="367.0" mnemonicParsing="false" onAction="#report" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="REPORT" textAlignment="CENTER" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="ATTACH_MONEY" />
                </graphic>-->
             </Button>
-            <Button layoutX="14.0" layoutY="396.0" mnemonicParsing="false" onAction="#showHistory" prefHeight="51.0" prefWidth="161.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSACTIONS" textAlignment="CENTER" textFill="WHITE" />
-            <Button layoutX="14.0" layoutY="470.0" mnemonicParsing="false" onAction="#showBranches" prefHeight="51.0" prefWidth="161.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="BRANCHES" textAlignment="CENTER" textFill="WHITE" />
-            <Button layoutX="15.0" layoutY="24.0" mnemonicParsing="false" onAction="#home" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME PAGE" textAlignment="CENTER" textFill="WHITE" />
+            <Button layoutX="14.0" layoutY="443.0" mnemonicParsing="false" onAction="#showHistory" prefHeight="51.0" prefWidth="161.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSACTIONS" textAlignment="CENTER" textFill="WHITE" />
+            <Button layoutX="14.0" layoutY="520.0" mnemonicParsing="false" onAction="#showBranches" prefHeight="51.0" prefWidth="161.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="BRANCHES" textAlignment="CENTER" textFill="WHITE" />
+            <Button layoutX="15.0" layoutY="49.0" mnemonicParsing="false" onAction="#home" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME" textAlignment="CENTER" textFill="WHITE" />
          </children>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -167,130 +157,130 @@
       </AnchorPane>
    </left>
    <right>
-      <VBox accessibleRole="TABLE_VIEW" nodeOrientation="LEFT_TO_RIGHT" prefHeight="652.0" prefWidth="211.0">
+      <VBox accessibleRole="TABLE_VIEW" nodeOrientation="LEFT_TO_RIGHT" prefHeight="599.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/login-banner.jpeg" />
+                  <Image url="@img/login-banner.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/Img_right1.jpeg" />
+                  <Image url="@img/Img_right1.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/img_right2.jpeg" />
+                  <Image url="@img/img_right2.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/img_right3.jpeg" />
+                  <Image url="@img/img_right3.jpeg" />
                </image>
             </ImageView>
          </children>
       </VBox>
    </right>
    <center>
-      <AnchorPane prefHeight="643.0" prefWidth="661.0">
+      <AnchorPane prefHeight="643.0" prefWidth="661.0" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="18.0" layoutY="21.0" text="EDIT INFORMATION ">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="96.0" layoutY="141.0" prefHeight="21.0" prefWidth="102.0" text="User Name:">
+            <Label layoutX="18.0" layoutY="146.0" prefHeight="21.0" prefWidth="102.0" text="User Name:">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="txtUserName" layoutX="212.0" layoutY="137.0" prefHeight="28.0" prefWidth="367.0" promptText="lowercase letters &amp; numbers" />
-            <Label layoutX="96.0" layoutY="199.0" prefHeight="21.0" prefWidth="102.0" text="FullName:">
+            <TextField fx:id="txtUserName" layoutX="134.0" layoutY="142.0" prefHeight="28.0" prefWidth="367.0" promptText="lowercase letters &amp; numbers" />
+            <Label layoutX="18.0" layoutY="204.0" prefHeight="21.0" prefWidth="102.0" text="FullName:">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="txtFullname" layoutX="214.0" layoutY="197.0" prefHeight="26.0" prefWidth="368.0" promptText="lowercase &amp; uppercase letters" />
-            <Label layoutX="96.0" layoutY="252.0" prefHeight="21.0" prefWidth="102.0" text="Email:">
+            <TextField fx:id="txtFullname" layoutX="133.0" layoutY="202.0" prefHeight="26.0" prefWidth="368.0" promptText="lowercase &amp; uppercase letters" />
+            <Label layoutX="18.0" layoutY="257.0" prefHeight="21.0" prefWidth="102.0" text="Email:">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="txtEmail" layoutX="212.0" layoutY="249.0" prefHeight="28.0" prefWidth="366.0" promptText="abc@gmail.com" />
-            <Label layoutX="96.0" layoutY="304.0" prefHeight="21.0" prefWidth="102.0" text="Address:">
+            <TextField fx:id="txtEmail" layoutX="134.0" layoutY="254.0" prefHeight="28.0" prefWidth="366.0" promptText="abc@gmail.com" />
+            <Label layoutX="18.0" layoutY="309.0" prefHeight="21.0" prefWidth="102.0" text="Address:">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="txtAddress" layoutX="211.0" layoutY="301.0" prefHeight="26.0" prefWidth="369.0" />
-            <Label layoutX="96.0" layoutY="360.0" prefHeight="21.0" prefWidth="110.0" text="Phone:">
+            <TextField fx:id="txtAddress" layoutX="133.0" layoutY="306.0" prefHeight="26.0" prefWidth="369.0" />
+            <Label layoutX="18.0" layoutY="365.0" prefHeight="21.0" prefWidth="110.0" text="Phone:">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="txtPhone" layoutX="212.0" layoutY="357.0" prefHeight="28.0" prefWidth="367.0" promptText="7-14 digits" />
-            <Label layoutX="96.0" layoutY="411.0" prefHeight="21.0" prefWidth="102.0" text="CCCD:">
+            <TextField fx:id="txtPhone" layoutX="134.0" layoutY="362.0" prefHeight="28.0" prefWidth="367.0" promptText="7-14 digits" />
+            <Label layoutX="18.0" layoutY="416.0" prefHeight="21.0" prefWidth="102.0" text="CCCD:">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="txtCCCD" layoutX="212.0" layoutY="408.0" prefHeight="26.0" prefWidth="366.0" promptText="7-14 digits" />
-            <Label layoutX="96.0" layoutY="465.0" prefHeight="21.0" prefWidth="110.0" text="GENDER:">
+            <TextField fx:id="txtCCCD" layoutX="134.0" layoutY="413.0" prefHeight="26.0" prefWidth="366.0" promptText="7-14 digits" />
+            <Label layoutX="18.0" layoutY="470.0" prefHeight="21.0" prefWidth="110.0" text="GENDER:">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="txtGender" layoutX="212.0" layoutY="461.0" prefHeight="28.0" prefWidth="366.0" promptText="Male/Female" />
-            <Label layoutX="96.0" layoutY="521.0" prefHeight="21.0" prefWidth="110.0" text="DOB:">
+            <TextField fx:id="txtGender" layoutX="134.0" layoutY="466.0" prefHeight="28.0" prefWidth="366.0" promptText="Male/Female" />
+            <Label layoutX="18.0" layoutY="526.0" prefHeight="21.0" prefWidth="110.0" text="DOB:">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Label>
-            <TextField fx:id="txtDOB" layoutX="211.0" layoutY="518.0" prefHeight="28.0" prefWidth="368.0" promptText="yyyy-mm-dd" />
-            <Label fx:id="txtNotification" layoutX="304.0" layoutY="591.0" prefHeight="32.0" prefWidth="188.0" textFill="#0feb1e">
+            <TextField fx:id="txtDOB" layoutX="133.0" layoutY="523.0" prefHeight="28.0" prefWidth="368.0" promptText="yyyy-mm-dd" />
+            <Label fx:id="txtNotification" layoutX="312.0" layoutY="589.0" prefHeight="32.0" prefWidth="188.0" textFill="#0feb1e">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Button cancelButton="true" layoutX="323.0" layoutY="586.0" mnemonicParsing="false" onAction="#cancelEdit" prefHeight="30.0" prefWidth="73.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="Back" textFill="WHITE">
+            <Button cancelButton="true" layoutX="232.0" layoutY="590.0" mnemonicParsing="false" onAction="#cancelEdit" prefHeight="30.0" prefWidth="73.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="Back" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Label fx:id="txtAccountNumber" layoutX="220.0" layoutY="50.0" prefHeight="28.0" prefWidth="293.0" text="Account Number">
+            <Label fx:id="txtAccountNumber" layoutX="142.0" layoutY="55.0" prefHeight="28.0" prefWidth="293.0" text="Account Number">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="96.0" layoutY="54.0" text="Account Number:">
+            <Label layoutX="18.0" layoutY="59.0" text="Account Number:">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label layoutX="96.0" layoutY="96.0" text="Role:">
+            <Label layoutX="18.0" layoutY="101.0" text="Role:">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="txtRole" layoutX="220.0" layoutY="96.0" prefHeight="18.0" prefWidth="116.0" text="Role">
+            <Label fx:id="txtRole" layoutX="142.0" layoutY="101.0" prefHeight="18.0" prefWidth="116.0" text="Role">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="ValidateUserName" layoutX="148.0" layoutY="170.0" prefHeight="21.0" prefWidth="500.0" textFill="RED" />
-            <Label fx:id="ValidateFullname" layoutX="148.0" layoutY="224.0" prefHeight="21.0" prefWidth="500.0" textFill="RED" />
-            <Label fx:id="ValidateEmail" layoutX="148.0" layoutY="278.0" prefHeight="21.0" prefWidth="500.0" textFill="RED" />
-            <Label fx:id="ValidateAddress" layoutX="148.0" layoutY="333.0" prefHeight="22.0" prefWidth="500.0" textFill="RED" />
-            <Label fx:id="ValidatePhone" layoutX="148.0" layoutY="386.0" prefHeight="22.0" prefWidth="500.0" textFill="RED" />
-            <Label fx:id="ValidateCCCD" layoutX="148.0" layoutY="435.0" prefHeight="22.0" prefWidth="500.0" textFill="RED" />
-            <Label fx:id="ValidateGender" layoutX="148.0" layoutY="490.0" prefHeight="22.0" prefWidth="500.0" textFill="RED" />
-            <Button layoutX="217.0" layoutY="586.0" mnemonicParsing="false" onAction="#updateUser" prefHeight="30.0" prefWidth="97.0" style="-fx-background-color: green; -fx-background-radius: 15;" text="Save" textFill="WHITE">
+            <Label fx:id="ValidateUserName" layoutX="134.0" layoutY="174.0" prefHeight="21.0" prefWidth="500.0" textFill="RED" />
+            <Label fx:id="ValidateFullname" layoutX="134.0" layoutY="228.0" prefHeight="21.0" prefWidth="500.0" textFill="RED" />
+            <Label fx:id="ValidateEmail" layoutX="134.0" layoutY="282.0" prefHeight="21.0" prefWidth="500.0" textFill="RED" />
+            <Label fx:id="ValidateAddress" layoutX="134.0" layoutY="337.0" prefHeight="22.0" prefWidth="500.0" textFill="RED" />
+            <Label fx:id="ValidatePhone" layoutX="134.0" layoutY="390.0" prefHeight="22.0" prefWidth="500.0" textFill="RED" />
+            <Label fx:id="ValidateCCCD" layoutX="134.0" layoutY="439.0" prefHeight="22.0" prefWidth="500.0" textFill="RED" />
+            <Label fx:id="ValidateGender" layoutX="134.0" layoutY="494.0" prefHeight="22.0" prefWidth="500.0" textFill="RED" />
+            <Button layoutX="128.0" layoutY="590.0" mnemonicParsing="false" onAction="#updateUser" prefHeight="30.0" prefWidth="97.0" style="-fx-background-color: green; -fx-background-radius: 15;" text="Save" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>
             </Button>
-            <Label fx:id="ValidateDOB" layoutX="148.0" layoutY="549.0" prefHeight="22.0" prefWidth="500.0" textFill="RED" />
+            <Label fx:id="ValidateDOB" layoutX="134.0" layoutY="551.0" prefHeight="22.0" prefWidth="500.0" textFill="RED" />
          </children>
       </AnchorPane>
    </center>

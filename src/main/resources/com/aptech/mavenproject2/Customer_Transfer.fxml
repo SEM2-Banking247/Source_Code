@@ -24,7 +24,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="800.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Customer_TransferController">
+<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="784.0" prefWidth="1089.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Customer_TransferController">
    <bottom>
       <AnchorPane prefHeight="76.0" prefWidth="1029.0" style="-fx-background-color: #deed87;" BorderPane.alignment="CENTER">
          <children>
@@ -33,7 +33,7 @@
                   <Image url="@../../../IMG/Logo.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="936.0" layoutY="39.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
+            <Label layoutX="750.0" layoutY="27.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
                <font>
                   <Font name="Arial Bold Italic" size="16.0" />
                </font>
@@ -58,11 +58,6 @@
                      </stops>
                   </RadialGradient>
                </textFill>
-            </Label>
-            <Label layoutX="936.0" layoutY="10.0" prefHeight="28.0" prefWidth="170.0" text="54 - Le Thanh Nghi Str" textFill="#f80000">
-               <font>
-                  <Font name="Arial Bold Italic" size="16.0" />
-               </font>
             </Label>
          </children>
       </AnchorPane>
@@ -91,7 +86,7 @@
                   </RadialGradient>
                </textFill>
             </Label>
-            <Button layoutX="1022.0" layoutY="21.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="#fcfcfc">
+            <Button layoutX="873.0" layoutY="22.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="#fcfcfc">
                <font>
                   <Font size="15.0" />
                </font>
@@ -102,49 +97,44 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" layoutX="522.0" layoutY="22.0" prefHeight="29.0" prefWidth="452.0" textFill="#f20202">
+            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" layoutX="414.0" layoutY="22.0" prefHeight="29.0" prefWidth="452.0" textFill="#f20202">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <ImageView disable="true" fitHeight="40.0" fitWidth="50.0" layoutX="974.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../IMG/icon_user.png" />
-               </image>
-            </ImageView>
          </children>
       </AnchorPane>
    </top>
    <left>
       <AnchorPane prefHeight="634.0" prefWidth="196.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="20.0" layoutY="199.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="52.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="WITHDRAW" textFill="#f5f2f2">
+            <Button layoutX="14.0" layoutY="192.0" mnemonicParsing="false" onAction="#withdraw" prefHeight="52.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="WITHDRAW" textFill="#f5f2f2">
 <!--               <graphic>
                   <Icon content="LOCAL_ATM" />
                </graphic>-->
             </Button>
-            <Button layoutX="20.0" layoutY="282.0" mnemonicParsing="false" onAction="#reset" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSFER" textFill="#f2eded">
+            <Button layoutX="14.0" layoutY="273.0" mnemonicParsing="false" onAction="#reset" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSFER" textFill="#f2eded">
 <!--               <graphic>
                   <Icon content="LOCAL_ATM" />
                </graphic>-->
             </Button>
-            <Button layoutX="20.0" layoutY="117.0" mnemonicParsing="false" onAction="#showInfor" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="INFORMATION" textFill="#fcfafa">
+            <Button layoutX="14.0" layoutY="111.0" mnemonicParsing="false" onAction="#showInfor" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="INFORMATION" textFill="#fcfafa">
 <!--               <graphic>
                   <Icon content="INSERT_EMOTICON" />
                </graphic>-->
             </Button>
-            <Button layoutX="20.0" layoutY="363.0" mnemonicParsing="false" onAction="#report" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="REPORT" textFill="WHITE">
+            <Button layoutX="14.0" layoutY="355.0" mnemonicParsing="false" onAction="#report" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="REPORT" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="WARNING" />
                </graphic>-->
             </Button>
-            <Button layoutX="17.0" layoutY="443.0" mnemonicParsing="false" onAction="#showHistory" prefHeight="51.0" prefWidth="163.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSACTIONS" textFill="#fcfafa">
+            <Button layoutX="12.0" layoutY="435.0" mnemonicParsing="false" onAction="#showHistory" prefHeight="51.0" prefWidth="163.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="TRANSACTIONS" textFill="#fcfafa">
 <!--               <graphic>
                   <Icon content="TIMELINE" />
                </graphic>-->
             </Button>
-            <Button layoutX="17.0" layoutY="519.0" mnemonicParsing="false" onAction="#showBranches" prefHeight="51.0" prefWidth="163.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="BRANCHES" textFill="#fcfafa" />
-            <Button layoutX="20.0" layoutY="41.0" mnemonicParsing="false" onAction="#home" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME PAGE" textFill="#fcfafa" />
+            <Button layoutX="12.0" layoutY="512.0" mnemonicParsing="false" onAction="#showBranches" prefHeight="51.0" prefWidth="163.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="BRANCHES" textFill="#fcfafa" />
+            <Button layoutX="14.0" layoutY="32.0" mnemonicParsing="false" onAction="#home" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME" textFill="#fcfafa" />
          </children>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -176,24 +166,24 @@
    <right>
       <VBox accessibleRole="TABLE_VIEW" nodeOrientation="LEFT_TO_RIGHT" prefHeight="599.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/login-banner.jpeg" />
+                  <Image url="@img/login-banner.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/Img_right1.jpeg" />
+                  <Image url="@img/Img_right1.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/img_right2.jpeg" />
+                  <Image url="@img/img_right2.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/img_right3.jpeg" />
+                  <Image url="@img/img_right3.jpeg" />
                </image>
             </ImageView>
          </children>
@@ -202,21 +192,21 @@
    <center>
       <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <content>
-            <AnchorPane prefHeight="649.0" prefWidth="775.0">
+            <AnchorPane prefHeight="635.0" prefWidth="692.0">
                <children>
-                  <Label layoutX="22.0" layoutY="19.0" prefHeight="33.0" prefWidth="161.0" text="TRANSFER MONEY">
+                  <Label layoutX="22.0" layoutY="25.0" text="TRANSFER MONEY">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Pane layoutX="77.0" layoutY="72.0" prefHeight="490.0" prefWidth="622.0" style="-fx-background-color: #FFFFCC;">
+                  <Pane layoutX="22.0" layoutY="73.0" prefHeight="490.0" prefWidth="622.0" style="-fx-background-color: #FFFFCC;">
                      <children>
                         <Label layoutX="14.0" layoutY="26.0" text="CARD NUMBER REQUEST:">
                            <font>
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
-                        <ChoiceBox fx:id="cardNumberChoiceBox" layoutX="204.0" layoutY="23.0" prefHeight="26.0" prefWidth="199.0" />
+                        <ChoiceBox fx:id="cardNumberChoiceBox" layoutX="204.0" layoutY="23.0" prefHeight="26.0" prefWidth="199.0" onAction="#getAmount"/>
                         <Label layoutX="14.0" layoutY="73.0" text="CARD NUMBER RECIEVER:">
                            <font>
                               <Font name="System Bold" size="14.0" />

@@ -27,16 +27,16 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane accessibleRole="MENU" opacity="0.85" prefHeight="800.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Admin_UserListController">
+<BorderPane accessibleRole="MENU" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="833.0" prefWidth="1158.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aptech.mavenproject2.Admin_UserListController">
    <bottom>
-      <AnchorPane prefHeight="74.0" prefWidth="1177.0" style="-fx-background-color: #deed87;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="76.0" prefWidth="1029.0" style="-fx-background-color: #deed87;" BorderPane.alignment="CENTER">
          <children>
-            <ImageView disable="true" fitHeight="50.0" fitWidth="65.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="50.0" fitWidth="65.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../IMG/Logo.jpg" />
                </image>
             </ImageView>
-            <Label layoutX="950.0" layoutY="38.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
+            <Label layoutX="750.0" layoutY="27.0" prefHeight="28.0" prefWidth="170.0" text="HOT LINE: 1800 1969" textFill="#f80000">
                <font>
                   <Font name="Arial Bold Italic" size="16.0" />
                </font>
@@ -61,11 +61,6 @@
                      </stops>
                   </RadialGradient>
                </textFill>
-            </Label>
-            <Label layoutX="950.0" layoutY="9.0" prefHeight="28.0" prefWidth="170.0" text="54 - Le Thanh Nghi Str" textFill="#f80000">
-               <font>
-                  <Font name="Arial Bold Italic" size="16.0" />
-               </font>
             </Label>
          </children>
       </AnchorPane>
@@ -94,7 +89,7 @@
                   </RadialGradient>
                </textFill>
             </Label>
-            <Button layoutX="1028.0" layoutY="23.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="WHITE">
+            <Button layoutX="960.0" layoutY="22.0" mnemonicParsing="false" onAction="#logout" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: red; -fx-background-radius: 15;" text="LOG OUT" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -105,43 +100,38 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" layoutX="642.0" layoutY="24.0" prefHeight="30.0" prefWidth="333.0" textFill="RED">
+            <Label fx:id="txtFullname_header" alignment="CENTER_RIGHT" layoutX="613.0" layoutY="23.0" prefHeight="30.0" prefWidth="333.0" text="Label" textFill="RED">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <ImageView disable="true" fitHeight="40.0" fitWidth="50.0" layoutX="975.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../IMG/icon_user.png" />
-               </image>
-            </ImageView>
          </children>
       </AnchorPane>
    </top>
    <left>
       <AnchorPane prefHeight="593.0" prefWidth="189.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="15.0" layoutY="200.0" mnemonicParsing="false" onAction="#userManager" prefHeight="52.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="USER MANAGER" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="184.0" mnemonicParsing="false" onAction="#userManager" prefHeight="52.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="USER MANAGER" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="ASSIGNMENT_IND" />
                </graphic>-->
             </Button>
-            <Button layoutX="15.0" layoutY="283.0" mnemonicParsing="false" onAction="#cardManager" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="CARD MANAGER" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="272.0" mnemonicParsing="false" onAction="#cardManager" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="CARD MANAGER" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="PAYMENT" />
                </graphic>-->
             </Button>
-            <Button layoutX="15.0" layoutY="118.0" mnemonicParsing="false" onAction="#branchManager" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text=" BRANCH MANAGER" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="99.0" mnemonicParsing="false" onAction="#branchManager" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text=" BRANCH MANAGER" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="ACCOUNT_BALANCE" />
                </graphic>-->
             </Button>
-            <Button layoutX="15.0" layoutY="364.0" mnemonicParsing="false" onAction="#salaryManager" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="SALARY MANAGER" textFill="WHITE">
+            <Button layoutX="15.0" layoutY="354.0" mnemonicParsing="false" onAction="#salaryManager" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="SALARY MANAGER" textFill="WHITE">
 <!--               <graphic>
                   <Icon content="ATTACH_MONEY" />
                </graphic>-->
             </Button>
-            <Button layoutX="15.0" layoutY="41.0" mnemonicParsing="false" onAction="#home" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME PAGE" textFill="WHITE" />
+            <Button layoutX="15.0" layoutY="21.0" mnemonicParsing="false" onAction="#home" prefHeight="51.0" prefWidth="159.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="HOME" textFill="WHITE" />
          </children>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -173,24 +163,24 @@
    <right>
       <VBox accessibleRole="TABLE_VIEW" nodeOrientation="LEFT_TO_RIGHT" prefHeight="599.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/login-banner.jpeg" />
+                  <Image url="@img/login-banner.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/Img_right1.jpeg" />
+                  <Image url="@img/Img_right1.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/img_right2.jpeg" />
+                  <Image url="@img/img_right2.jpeg" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="165.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../IMG/img_right3.jpeg" />
+                  <Image url="@img/img_right3.jpeg" />
                </image>
             </ImageView>
          </children>
@@ -206,7 +196,7 @@
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <TableView fx:id="TvUserList" accessibleRole="MENU" cache="true" layoutX="19.0" layoutY="390.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#ShowUserDetail" prefHeight="187.0" prefWidth="734.0" style="-fx-border-color: gray;">
+                  <TableView fx:id="TvUserList" accessibleRole="MENU" cache="true" layoutX="2.0" layoutY="392.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#ShowUserDetail" prefHeight="269.0" prefWidth="734.0" style="-fx-border-color: gray;">
                     <columns>
                       <TableColumn fx:id="ColAccountNumber" prefWidth="118.0" sortType="DESCENDING" text="Account Number" />
                       <TableColumn fx:id="ColUserName" prefWidth="104.0" text="User Name" />
@@ -264,7 +254,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <AnchorPane layoutX="16.0" layoutY="56.0" prefHeight="241.0" prefWidth="740.0" style="-fx-background-color: #d4d2cd;">
+                  <AnchorPane layoutX="2.0" layoutY="47.0" prefHeight="241.0" prefWidth="740.0" style="-fx-background-color: #d4d2cd;">
                      <children>
                         <Label layoutX="14.0" layoutY="52.0" text="User Name:">
                            <font>
@@ -369,7 +359,7 @@
                      </children>
                   </AnchorPane>
                   <TextField fx:id="txtFindname" layoutX="447.0" layoutY="350.0" prefHeight="26.0" prefWidth="229.0" promptText="Search..." style="-fx-background-color: white;" />
-                  <Label fx:id="txtNotification" alignment="CENTER" layoutX="85.0" layoutY="297.0" prefHeight="35.0" prefWidth="592.0" textFill="RED">
+                  <Label fx:id="txtNotification" alignment="CENTER" layoutX="70.0" layoutY="297.0" prefHeight="35.0" prefWidth="592.0" textFill="RED">
                      <font>
                         <Font size="15.0" />
                      </font>
