@@ -194,9 +194,13 @@ public class Transaction_InsertBillController implements Initializable{
     
     @FXML
     private void printBill() throws FileNotFoundException, IOException{
+        //create document
         try (PDDocument pdfdoc = new PDDocument()) {
+            //add first page to document
             pdfdoc.addPage(new PDPage());
+            //get first page from the document
             PDPage page = pdfdoc.getPage(0);
+            //contentStream = first page content
             try (PDPageContentStream contentStream = new PDPageContentStream(pdfdoc, page)) {
     
                 //Setting the font to the Content stream
@@ -283,7 +287,7 @@ public class Transaction_InsertBillController implements Initializable{
                 contentStream.close();  
             }  
             
-            //path where the PDF file will be store
+            //path where the PDF file will be stored
             pdfdoc.save("/Users/tuan/NetBeansProjects/banking247/InsertBill_id"+custom_Transaction.getTransaction_id()+".pdf");
             
             //close file

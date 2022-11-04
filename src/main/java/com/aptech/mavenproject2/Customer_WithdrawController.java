@@ -106,8 +106,10 @@ public class Customer_WithdrawController implements Initializable{
     private void getAmount() throws SQLException{
         //get data
         String card_number = cardNumberChoiceBox.getValue();
-        Card card_request = cardEntity.selectCardByCardNumber(card_number);
-        txtBalance.setText(String.format("%.0f",card_request.getCard_balance()));
+        if (card_number != null) {
+            Card card_request = cardEntity.selectCardByCardNumber(card_number);
+            txtBalance.setText(String.format("%.0f",card_request.getCard_balance()));
+        }
     }
     
     @FXML 
@@ -115,6 +117,11 @@ public class Customer_WithdrawController implements Initializable{
         //get data
         String card_number = cardNumberChoiceBox.getValue();
         Card card_request= cardEntity.selectCardByCardNumber(card_number);
+        
+        if (card_number == null) {
+            txtNotification.setText("Please select a card first");
+            return 0;
+        }
         
         Double amount = Double.parseDouble(txtWithdrawAmount.getText());
         if (amount >= (card_request.getCard_balance() - 50000)) {

@@ -68,7 +68,7 @@ public class Customer_SignUpController implements Initializable{
     }    
     
     @FXML
-    public void addUser() throws IOException, SQLException, InterruptedException{
+    public int addUser() throws IOException, SQLException, InterruptedException{
         String gender = ((Labeled)txtGender.getSelectedToggle()).getText();
         
         User user = new User();
@@ -82,12 +82,17 @@ public class Customer_SignUpController implements Initializable{
         user.setCCCD(txtCCCD.getText()); 
         user.setGender(gender); 
         user.setDOB(txtDOB.getText()); 
+        if (!userEntity.searchUserByName(user.getUser_name()).isEmpty()) {
+            txtNotification.setText("Username already existed. Try again!");
+            return 0;
+        }
         userEntity.addUser(user);
         
         txtNotification.setText("Account created successfull");
         
         Thread.sleep(3000);
         App.setRoot("Login");
+        return 1;
     }
     
     @FXML
@@ -97,7 +102,9 @@ public class Customer_SignUpController implements Initializable{
         txtDOB.setText("");
         txtEmail.setText("");
         txtFullname.setText("");
-        txtGender.getSelectedToggle().setSelected(false);
+        if (txtGender.getSelectedToggle() != null) {
+            txtGender.getSelectedToggle().setSelected(false);
+        }
         txtNotification.setText("");
         txtPassword.setText("");
         txtPhone.setText("");

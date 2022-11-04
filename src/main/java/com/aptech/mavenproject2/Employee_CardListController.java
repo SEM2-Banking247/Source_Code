@@ -25,6 +25,9 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.collections.FXCollections;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
@@ -33,6 +36,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.util.Duration;
 
 /**
  * FXML Controller class
@@ -122,8 +126,29 @@ public class Employee_CardListController implements Initializable {
         } catch (SQLException ex) {
             Logger.getLogger(Employee_CardListController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+        //get user card's balance every 1s
+        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(1000), e -> {
+            try {
+                getAmount();
+            } catch (SQLException ex) {
+                Logger.getLogger(Customer_WithdrawController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }));
+        timeline.setCycleCount(Animation.INDEFINITE);
+        timeline.playFromStart();
     }
 
+    @FXML 
+    private void getAmount() throws SQLException{
+        //get data
+        Custom_Card select_card = TvCardManager.getSelectionModel().getSelectedItem();
+        if (select_card != null) {
+            Card card_request = cardEntity.selectCardByCardNumber(select_card.getCard_number());
+            txtBalance.setText(String.format("%.0f",card_request.getCard_balance()));
+        }
+    }
+    
     @FXML
     private void showCardDetail() throws SQLException {
         Custom_Card select_card = TvCardManager.getSelectionModel().getSelectedItem();
@@ -192,7 +217,7 @@ public class Employee_CardListController implements Initializable {
                 transaction.setTransaction_amount(Double.parseDouble(Card_balance) - card_request.getCard_balance());
                 transaction.setNew_balance_request(Double.parseDouble(Card_balance));
                 transaction.setNew_balance_receiver(Double.parseDouble(Card_balance));
-                transaction.setNotice("Added by "+selected_branch.getBranch_name());
+                transaction.setNotice("Added by id "+ user_request.getUser_id() +" in "+selected_branch.getBranch_name());
                 transaction.setTransaction_date(LocalDate.now());
                 transactionEntity.addTransaction(transaction);
             }
@@ -203,8 +228,8 @@ public class Employee_CardListController implements Initializable {
         else {
             //add
             cardEntity.addCard(card);
-            txtNotification.setText("Card Added!");
             refresh();
+            txtNotification.setText("Card Added!");
         }
     }
     
@@ -224,6 +249,7 @@ public class Employee_CardListController implements Initializable {
     private void refresh() throws SQLException{
         showCard();
         clear();
+        TvCardManager.getSelectionModel().clearSelection();
     }
 
     @FXML
@@ -279,24 +305,22 @@ public class Employee_CardListController implements Initializable {
     private void Delete(ActionEvent event) throws SQLException {
         Custom_Card select_card = TvCardManager.getSelectionModel().getSelectedItem();
         
-        if (select_card != null && !txtSelectedUser.getText().equals("")) {
+        //if there is a keyword then after deleting the card, run find() again
+        if (select_card != null && !txtKeyword.getText().equals("")) {
             cardEntity.deleteCard(select_card.getCard_infor_id());
-            Find();
             clear();
+            Find();
+            txtNotification.setText("Card deleted!");
         }
-        else if (select_card != null && txtSelectedUser.getText().equals("")) {
+        //if there are no search keyword then just refresh
+        else if (select_card != null && txtKeyword.getText().equals("")) {
             cardEntity.deleteCard(select_card.getCard_infor_id());
-            showCard();
-            clear();
+            refresh();
+            txtNotification.setText("Card deleted!");
         }
-        else if(select_card == null && !txtSelectedUser.getText().equals("")){
-            Find();
+        else if(select_card == null){
+            txtNotification.setText("Please select a card from the table first");
         }
-        else if(select_card == null && txtSelectedUser.getText().equals("")){
-            showCard();
-            clear();
-        }
-        txtNotification.setText("Card deleted!");
     }
 
     public void showCard() throws SQLException {

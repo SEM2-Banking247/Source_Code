@@ -142,8 +142,11 @@ public class Customer_TransferController implements Initializable{
     private void getAmount() throws SQLException{
         //get data
         String card_number = cardNumberChoiceBox.getValue();
-        Card card_request = cardEntity.selectCardByCardNumber(card_number);
-        txtBalance.setText(String.format("%.0f",card_request.getCard_balance()));
+        if (card_number != null) {
+            Card card_request = cardEntity.selectCardByCardNumber(card_number);
+            txtBalance.setText(String.format("%.0f",card_request.getCard_balance()));
+        }
+        
     }
     
     @FXML 
@@ -211,6 +214,7 @@ public class Customer_TransferController implements Initializable{
         }
         else {
             txtNotification.setText("Unqualified receiver card number!");
+            return 0;
         }
         return 1;
         
