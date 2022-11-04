@@ -26,7 +26,7 @@ public class BaseEntity {
 
     protected static Connection open() {
         try {
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + DATABASE, USERNAME, PASSWORD);
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:8889/" + DATABASE, USERNAME, PASSWORD);
         } catch (SQLException ex) {
             Logger.getLogger(BaseEntity.class.getName()).log(Level.SEVERE, null, ex);
         }

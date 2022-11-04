@@ -509,5 +509,40 @@ public class UserEntity extends BaseEntity{
         return user;
     }
     
-    
+    public User selectUserByName(String name) throws SQLException{
+        //start connection
+        conn = BaseEntity.open();
+        
+        User user = new User();
+        
+        //prepare query
+        statement = conn.prepareStatement("select * from users where User_name=?;");
+        statement.setString(1, name);
+        
+        //execute query
+        ResultSet data = statement.executeQuery();
+        while(data.next()){
+            user.setUser_id(data.getInt("User_id"));
+            user.setRole_id(data.getInt("Role_id"));
+            user.setAccount_number(data.getString("Account_number"));
+            user.setUser_name(data.getString("User_name"));
+            user.setEmail(data.getString("Email"));
+            user.setPassword(data.getString("Password"));
+            user.setFull_name(data.getString("Full_name"));
+            user.setAddress(data.getString("Address"));
+            user.setPhone_number(data.getString("Phone_number"));
+            user.setCCCD(data.getString("CCCD"));
+            user.setGender(data.getString("Gender"));
+            user.setDOB(data.getString("DOB"));
+            user.setPin(data.getString("Pin"));
+            user.setCreate_at(LocalDate.parse(data.getString("Create_date")));
+            user.setUpdate_at(LocalDate.parse(data.getString("Update_date")));
+            break;
+        }
+        
+        //close connection
+        BaseEntity:close();
+        
+        return user;
+    }
 }
